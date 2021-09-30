@@ -53,7 +53,6 @@ return (  `transparent linear-gradient(90deg, ${notesColors[index]} 0%, #FFFFFF0
         if (direction == "left") {
             if (currentNote < 4 || currentNote < state.notes.length - 1)
                 tempIndex = currentNote + 1;
-            // else if (state.notes.length < 5)!!!!!!!!!!!!!!!!!!!!!!!!!!!
             else tempIndex = 0;
         }
         else {
