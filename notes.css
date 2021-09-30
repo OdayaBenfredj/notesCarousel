@@ -1,0 +1,579 @@
+.noteC{
+  height: calc(100% * 29rem);
+  width: 100%;
+  overflow-wrap: break-word;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  padding: 5px;
+  height: 75%;
+  min-height: 75%;
+  max-height: 75%;
+  opacity: 0.8;  
+}
+.noteTop{
+  height: 25%;
+  width: 100%;
+}
+.noteWrap15 ,.notePlace {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 50%;
+  width: 15% ;  
+}
+.noteWrap24{
+ width: 25% ;
+ margin-inline: 1%;
+ height: 70% ;
+}
+.noteWrap3{
+  width: 40% ;
+  overflow: hidden;
+  height: 100%;
+}
+.from1-2{
+  animation: from1-2 0.8s;
+}
+@keyframes from1-2 {
+  from { 
+    /* margin-left: 0;   */
+
+width: 15%;
+height: 50%;
+  }
+  to {
+    width: 25%;
+    height: 70%;
+    /* margin-left: 10%; */
+    /* margin-right: -10%; */
+
+   }
+  }
+.from2-3{
+  animation: from2-3 0.8s;
+}
+@keyframes from2-3 {
+  from { 
+    width: 25%;
+    /* margin-left: 0;   */
+    height: 70%;
+  }
+  to {
+    width:40% ;
+    height: 100% ;
+    /* margin-left: 40; */
+    /* margin-right: -40%; */
+
+   }
+  }
+.from3-4{
+  animation: from3-4 0.8s;
+  /* position: absolute; */
+  width: 40% ;
+  overflow: hidden;
+  background-color: khaki;
+  height: 100%;
+}
+@keyframes from3-4 {
+
+  from { 
+     width:40%;
+    height: 100%;
+    /* margin-left: 0; */
+  }
+  to {
+    width: 25%;
+    /* margin-left: 21%;   */
+    /* margin-right: -21%; */
+    height: 70%;
+   }
+  }
+  .from4-5{
+    animation: from4-5 0.8s;
+
+  }
+  @keyframes from4-5 {
+  
+    from { 
+       width:25%;
+      height: 70%;
+      opacity: 1;
+      /* border-right-color: white;
+      border-right-style: solid;
+      border-right-width: 0; */
+      /* margin-left: 0; */
+    }
+    to {
+      width: 15%;
+      opacity: 0.65;
+      /* margins-left: 21%;   */
+      /* margin-right: -21%; */
+      height: 50%;
+      /* border-right-color: white;
+      border-right-style: solid;
+      border-right-width: 10px; */
+     }
+    }
+    .from5-1{
+      animation: from5-1 0.8s;
+
+    }
+    @keyframes from5-1 {
+    
+      from { 
+        width: 15%;
+        opacity: 1;
+        margin-right: 0;
+      }
+      to {
+      width: 0%;
+      margin-right: -1%;
+      opacity: 0;
+       }
+      }
+    @keyframes notePlace {
+    
+      from { 
+        width: 0%;
+        height: 30%;
+        
+      }
+      to {
+      width: 15%;
+      height: 50%;
+       }
+      }
+.notePlace{
+   animation: notePlace 0.8s;
+   /* background: transparent linear-gradient(90deg, #5FC3E6 0%, #FFFFFF00 100%); */
+   /* background-color: rgb(166, 235, 235); */
+
+   }   
+.btn_delete_popup{
+  background: var(--unnamed-color-25c6ea) 0% 0% no-repeat padding-box;
+background: #25C6EA 0% 0% no-repeat padding-box !important;
+border-radius: 7px;
+opacity: 1;
+}
+.height30px{
+  height: 28px;
+  overflow: hidden;
+  width: 45%;
+  font-size: 83% !important;
+  padding: 0% !important;
+}
+@media only screen and (min-width: 768px)  
+{
+  .noteDiv{
+  /* margin-top: var(--a); */
+
+    /* margin-top: 8rem !important; */
+  }
+}
+@media only screen and (max-width: 768px)  
+{
+  .noteInnerDiv{
+    width: 30rem !important;
+  }
+}
+@media only screen and (max-width: 992px)  
+{
+
+.height30px{
+  width: 7rem !important;
+  font-size: 90% !important;
+}}
+@media only screen and (min-width: 1200px) 
+{
+.height30px{
+  width: 40%;
+  font-size: 90% !important;
+}}
+.whiteBtn{
+  color: #25C6EA !important;
+  border:1px solid #25C6EA  !important;
+}
+.blueBtnSmall{
+  background-color: #25C6EA !important;
+  color: white!important;
+}
+.text_inMessage{
+  text-align: left;
+font: normal normal normal 16px/21px Roboto;
+letter-spacing: 0px;
+color: #363839;
+text-transform: capitalize;
+opacity: 1;
+margin-top: 7% !important;
+}
+  /* .messageDeleteContacts {
+                  border: 8px solid #5FC3E6 !important;
+  border-left: none !important;
+  border-right: none !important;
+  border-bottom: none !important;
+  } */
+
+*:focus {
+  outline: none;
+  background-color: transparent;
+  border-color: transparent;  
+}
+.noteBtn{
+  background-color: transparent;
+  border-color: transparent;  
+  color: #ffffff;
+  font-size: large;
+  font-weight: 400;
+  padding: 0ch;
+  margin: 0;
+cursor: pointer;
+}
+.noteInput{
+  resize: none;
+  direction: ltr  !important;
+  background-color: transparent;
+  border-color: transparent;  
+  width: 100%;  
+  height: 7 0%;  
+text-align: start !important;
+unicode-bidi: plaintext !important;
+}
+.noteDelete{
+  cursor: pointer;
+  filter: brightness(100);
+  height: 15px;
+}
+.openNoteHeader{
+  padding-inline: 10px;
+display: flex;
+font-size: xx-small;
+align-items: center;
+justify-content: space-between;
+/* height: 1rem; */
+}
+  .modal-content {
+    border-left: none;
+    border-right: none;
+    background-image: linear-gradient(90deg, #5FC3E6 , #087296);
+    background-size: 100% 8px;
+    background-position: 0 0,100% 0 ;
+    background-repeat: no-repeat;
+    border-bottom: none !important;
+} 
+.imgSuccses{
+  width: 20%;
+  margin-top: 3rem;
+  margin-bottom: -2rem;
+  
+}
+.plusIcon{
+  font-weight: 300;
+  font-size: x-large;
+  color: #5FC3E6;
+  margin-top: 2px;
+}
+.MessageBody1{
+  margin-top: 2vh;
+  padding-left: 2vw;
+  padding-bottom: 1vh;
+  font-size: medium;
+  color: black;
+}
+.MessageBody{
+  border-bottom: 1px solid #CCC !important;
+  
+  margin-top: 2vh;
+  padding-left: 2vw;
+  padding-bottom: 1vh;
+  font-size: medium;
+  color: black;
+
+}
+
+.topCartContactDetails{
+  z-index: 999 !important;
+  top: 1.2rem !important;
+  position: sticky !important ;
+  background-color: white;
+}
+
+.notesDiv{
+  /* background-color: aquamarine; */
+  /* min-height: 8rem; */
+
+
+  flex: 1;
+  align-items: center !important;
+
+
+
+    /* margin-top: var(--a); */
+    align-content: flex-end;
+    align-items: flex-end;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    justify-content: center;
+
+    /* flex-wrap: wrap; */
+  
+}
+.noteDiv{
+  /* flex: 1 1 auto; */
+
+  /* height: 7rem; */
+  height: inherit;
+  /* min-height: 8rem; */
+  /* margin-top: var(--a) !important; */
+  align-content: flex-end;
+  align-items: flex-end;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: center;
+  filter: brightness(1.2);
+  padding: 3%;
+  /* background-color: lawngreen; */
+}
+.btnNote{
+  filter: brightness(0.9) !important;
+
+}
+.noteInnerDiv{
+  width: 96%;
+  height: 100%;
+  max-height: 6rem;
+  /* ??????????????? */
+  /* background-color: blue; */
+  max-width: 28rem;
+  /* background-color: lightgreen; */
+  align-items: center;
+      flex-direction: row;
+  justify-content: space-between;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  /* padding-top: 1rem ; */
+}
+/* .noteC{
+  width: 4.5rem;
+  height: 4.5rem;
+  margin: 0.05rem;
+  /* transition-duration: 00.5s; 
+  transition:width 0.5s, height 0.5s ,margin-top 0.5s; 
+} */
+/* 
+.noteC:hover{
+width: 6rem !important;
+margin-top: -0.5rem;
+height: 6rem !important;
+} */
+/* .noteWrap3{
+  align-self: flex-start;
+  margin-top: 0.5rem;
+} */
+.noteWrap{
+  margin-right: 3px;
+
+  overflow: hidden;
+  /* margin-left: 1% !important; */
+  display: flex;
+  flex-direction: column;
+  /* align-content: space-around; */
+  align-items: center;
+  width:inherit;
+  height: 100%;
+}
+.note5Top{
+  width:90%;
+  /* height: calc(var(--a) * 0.7);  */
+  height: 0.6rem;
+
+  align-self: flex-start;
+}
+.note5{
+  width:90%;
+  /* height: calc(var(--a) * 2);  */
+  height: 2rem;
+    filter: brightness(1.2);
+  align-self: flex-start;
+
+}
+.note1Top{
+  align-self: flex-end;
+  width:90%;
+  /* height: calc(var(--a) * 0.7);  */
+  height: 0.6rem;
+}
+.note1{
+  align-self: flex-end;
+  width:90%;
+  /* height: calc(var(--a) * 2);  */
+  height: 2rem;
+  min-height: 2rem;
+    filter: brightness(1.2);
+    opacity: 0.8;
+}
+.note2_4Top{
+  width:90%;
+  /* margin-left: 3px; */
+
+  /* height: calc(var(--a) * 0.8);  */
+  height: 0.8rem;
+}
+.note2_4{
+  width:90%;
+  height: 3rem;
+  opacity: 0.8;
+  /* margin-left: 3%; */
+    filter: brightness(1.2);
+}
+.note3Top{
+  margin-top: -1.1rem;
+  width:calc(100% + 10px);
+  /* height: calc(var(--a) * 0.9);  */
+  height: 1.1rem;
+  position: absolute;
+  /* width: 25%; */
+  width: 4rem;
+  min-width: 15%;
+  max-width: 10rem;
+
+
+
+}
+.noteMain{
+  overflow: hidden;
+  width: 100%;
+  display: flex !important;
+  flex-direction: column;
+  justify-content: start !important;
+}
+.note3{    
+  width:110%;
+  overflow-wrap: break-word;
+  filter: brightness(1.2);
+  overflow: hidden;
+  /* height: calc(var(--a) * 3.2);  */
+  height: 4rem;
+  position: absolute;
+  z-index: 11;
+  /* width: 25%; */
+  width: 4rem;
+  min-width: 15%;
+    max-width: 10rem;
+    /* box-shadow: 1px 2px 3px #888, -1px 2px 3px #888; */
+
+  /* -moz-box-shadow:0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+  -webkit-box-shadow:0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+  -khtml-box-shadow:0px 4px 4px 0px rgba(0, 0, 0, 0.3);
+  box-shadow:0px 4px 4px 0px rgba(0, 0, 0, 0.3); */
+  /* -moz-box-shadow: 1px 1px 15px #415a68;
+  -webkit-box-shadow: 1px 1px 15px #415a68;
+  -khtml-box-shadow: 1px 1px 15px #415a68;
+  box-shadow: 1px 1px 15px #415a68; */
+
+
+  /* background:  transparent linear-gradient(270deg, #f02727 0%, #FFFFFF00 100%) 0% 0% no-repeat padding-box;; */
+}
+/* from {
+  width: calc(var(--b) * 17);  
+  height: 0vh;
+ }
+to { 
+   width: calc(var(--b) * 20);
+  height: calc(var(--b) * 20); */
+@keyframes noteopen {
+from {
+  width: calc(var(--b) * 10);  
+  height: 0vh;
+ }
+to { 
+  
+   width:calc(var(--b) * 20);
+  height: 20vh;
+}
+}
+@keyframes noteclose {
+
+  from { 
+     width:20vh;
+    height: 20vh;
+    left: calc(50% - 150px);
+  }
+  to {
+    left:50%;
+
+    width: 0vh;  
+    height: 0vh;
+   }
+  }
+  
+.openNote{
+  animation-name: noteopen;
+  animation-duration: 0.2s;
+  width:150px;
+height:calc(var(--b) * 20);
+/* min-width: 5rem;  */
+overflow: hidden;
+position: absolute;
+/* margin-left:9%; */
+left: calc(50% - 150px);
+box-shadow: 8px 8px 14px #00000029;
+opacity: 1;
+display: block;
+z-index: 22;
+}
+.closeNote{
+  animation-name: noteclose;
+  animation-duration: 0.3s;
+  animation-fill-mode:forwards ;
+  width:20vh ;
+height: 20vh; 
+overflow: hidden;
+z-index: 22 !important;
+position: absolute;
+box-shadow: 8px 8px 14px #00000029;
+opacity: 1;
+display: block;
+}
+.doneNotBtn{
+  display: flex;
+  justify-content: space-between;
+ opacity: 0;
+  transition:opacity 0.3s;
+  
+}
+.openNote:hover .doneNotBtn{
+  opacity: 1;
+}
+.MessageHeader{
+  padding-top: 0 !important;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  height: 5vh;
+  color: #ffffff;
+  margin: 0%;
+  font-size:1rem;
+font-weight: 300;
+padding-left: 2vw;
+}
+.titleMessageHeader{
+margin-top: 1vh;
+}
+.req{
+  filter: brightness(1.2);
+
+  z-index: 999 !important;
+  transform: rotate(180deg) !important;
+  position: absolute;
+  margin-left: 148px;
+  left: calc(50% - 150px);
+  margin-top: -1.5rem;  
+
+}
+/* .openNote::before{
+  content: url("../assets/Polygon 9.svg");
+  color: yellowgreen !important;
+  background-color: yellowgreen;
+  fill:violet !important;
+} */
