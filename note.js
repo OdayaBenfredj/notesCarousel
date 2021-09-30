@@ -64,22 +64,6 @@ const closeNote =()=>{
 
                 >
                 </textarea>
-                {/* <div className="doneNotBtn">
-                    <Button className="mx-auto btnNote"
-                        style={{ backgroundColor: color }}
-                        onClick={(e) => {
-                            console.log(noteValue, "lllllllllllkkkkkkkkkkkkk")
-                            e.preventDefault();
-                            e.stopPropagation();
-                            notesOnClick(noteValue, index)
-                            setTimeout(() => {
-                                setShowNote(false)
-                            }, 800);
-                        }}>
-
-                        done  </Button>
-                </div> */}
-
             </div >
         </div >
         </>
@@ -87,62 +71,5 @@ const closeNote =()=>{
 }
 
 
-
-
-
-
-
-
-
-// import React, { useState, useEffect, } from 'react'
-// import { actions } from '../Redux/Actions/ContactAction';
-// import { connect, useDispatch, useSelector } from 'react-redux';
-// import './listContact.css'
-
-
-
-
-
-// export default function Note(props) {
-//     const { index, notesOnClick, addNote, removeNote,
-//         noteIndex, setNoteIndex, noteValue, setNoteValue } = props;
-//     const state = useSelector(state => state.contactDetails.contactDetails)
-
-//     return (
-//         <div>
-//             <li>
-//                 <div class="rotate-1 lazur-bg">
-//                     <button className="noteBtn" onClick={(e) => { e.preventDefault(); removeNote(index) }} value="-">-</button>
-//                     <button className="noteBtn" onClick={(e) => {
-//                         e.preventDefault(); addNote()
-//                     }} >+</button>
-//                     <textarea
-//                         class="noteInput "
-//                         rows="5"
-//                         value={index == noteIndex ? noteValue : state.notes[index]}
-//                         onChange={(e) => {
-//                             e.preventDefault();
-//                             e.stopPropagation();
-//                             setNoteValue(e.target.value)
-//                         }}
-//                         onMouseLeave={(e) => {
-//                             e.preventDefault();
-//                             e.stopPropagation();
-//                             notesOnClick(e.target.value, index)
-//                             setNoteIndex(-1)
-//                         }}
-//                         onMouseEnter={(e) => {
-//                             setNoteIndex(index)
-//                             setNoteValue(state.notes[index])
-//                             e.preventDefault();
-//                             e.stopPropagation();
-//                         }}
-//                     >
-//                     </textarea>
-//                 </div>
-//             </li>
-//         </div>
-//     )
-// }
 
 
